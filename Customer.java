@@ -1,4 +1,4 @@
-package com.example.payment.dto;
+package com.tired.test5;
 
 public class Customer {
     private int id;
@@ -6,17 +6,11 @@ public class Customer {
     private String email;
     private int age;
 
-    // Constructors
-    public Customer() {}
-
-    public Customer(int id, String name, String email, int age) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.age = age;
+    @Override
+    public String toString() {
+        return "Customer [id=" + id + ", name=" + name + ", email=" + email + ", age=" + age + "]";
     }
 
-    // Getters and Setters
     public int getId() {
         return id;
     }
@@ -47,15 +41,5 @@ public class Customer {
 
     public void setAge(int age) {
         this.age = age;
-    }
-
-    @Override
-    public String toString() {
-        return "Customer{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", age=" + age +
-                '}';
     }
 }
