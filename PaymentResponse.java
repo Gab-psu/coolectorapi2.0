@@ -4,18 +4,15 @@ public class PaymentResponse {
     private String transactionId;
     private String message;
 
-    // Constructor to initialize both fields
-    public PaymentResponse(String transactionId, String message) {
+    public PaymentResponse(String transactionId) {
         this.transactionId = transactionId;
-        this.message = message;
+        this.message = "Transaction successful";
     }
 
-    // Constructor for cases where only the message is needed
     public PaymentResponse(String message) {
         this.message = message;
     }
 
-    // Getters and Setters for transactionId and message
     public String getTransactionId() {
         return transactionId;
     }
@@ -31,13 +28,4 @@ public class PaymentResponse {
     public void setMessage(String message) {
         this.message = message;
     }
-
-    @Override
-    public String toString() {
-        return "PaymentResponse{" +
-                "transactionId='" + transactionId + '\'' +
-                ", message='" + message + '\'' +
-                '}';
-    }
 }
-
