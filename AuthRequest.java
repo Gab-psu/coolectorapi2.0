@@ -20,4 +20,4 @@ public class AuthRequest {
     public void setPassword(String password) {
         this.password = password;
     }
-
+}
